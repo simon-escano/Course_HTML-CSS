@@ -1,0 +1,149 @@
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+}
+
+@media (max-width: 1024px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .video-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1352px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.video-preview{
+  cursor: pointer;
+  border: 1px solid #50505000;
+  border-radius: 20px;
+  padding: 10px;
+}
+.video-preview:hover{
+  background-color: #272727;
+}
+.video-preview:active{
+  border: 1px solid #505050;
+  background-color: #3D3D3D;
+}
+
+.thumbnail-section{
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.thumbnail{
+  width: 100%;
+  border-radius: 12px;
+}
+
+.video-time{
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 7.5px;
+  padding: 3px 5px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 44px 1fr;
+}
+
+.channel-picture{
+  vertical-align: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 100%;
+  width: 36px;
+  height: 36px;
+}
+
+.profile-picture{
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.video-title{
+  color: #F1F1F1;
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  background-color: 0;
+}
+
+.video-author, .video-stats{
+  font-size: 14px;
+  color: #AAAAAA;
+  margin-bottom: 4px;
+}
+
+.video-author:hover{
+  color: #dfdfdf;
+}
+
+.channel-preview{
+  display: flex;
+  background-color: #3D3D3D;
+  align-items: center;
+  width: 235px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 35px;
+  bottom: -80px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preview-channel-picture{
+  margin-right: 10px;
+}
+
+.preview-profile-picture{
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+
+.preview-channel-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-name{
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.preview-subcribers{
+  color: #AAAAAA;
+  font-size: 16px;
+}
+
+.channel-picture:hover .channel-preview{
+  opacity: 1;
+}
