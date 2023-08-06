@@ -114,3 +114,46 @@ button:active{
     cursor: pointer;
   }
 }
+
+.error-message{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.monkey-error{
+  width: 300px; 
+  margin-bottom: 30px; 
+  margin-top: 80px;
+}
+
+.error-heading{
+  color: white; 
+  font-size: 36px; 
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.error-subheading{
+  color: #AAAAAA; 
+  font-size: 18px; 
+  width: 700px; 
+  text-align: center; 
+  margin-bottom: 20px;
+}
+
+.go-home-button{
+  color: white; 
+  background-color: #065fd5; 
+  cursor: pointer; 
+  font-size: 20px; 
+  padding: 10px 16px; 
+  border-radius: 8px;
+}
+.go-home-button:hover{
+  background-color: #0b4ea5; 
+}
+.go-home-button:active{
+  opacity: 0.8; 
+}
